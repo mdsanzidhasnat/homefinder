@@ -10,19 +10,19 @@ export function Footer() {
 
   const footerLinks = {
     [t("home")]: [
-      { href: `/${locale}`, label: t("home") },
-      { href: `/${locale}/search?purpose=sale`, label: "Buy" },
-      { href: `/${locale}/search?purpose=rent`, label: "Rent" },
-      { href: `/${locale}/agents`, label: t("agents") },
+      { href: "/", label: t("home") },
+      { href: "/search?purpose=sale", label: "Buy" },
+      { href: "/search?purpose=rent", label: "Rent" },
+      { href: "/agents", label: t("agents") },
     ],
     "Company": [
-      { href: `/${locale}/about`, label: t("about") },
-      { href: `/${locale}/contact`, label: t("contact_us") },
+      { href: "/about", label: t("about") },
+      { href: "/contact", label: t("contact_us") },
     ],
     "Support": [
-      { href: `/${locale}/contact`, label: t("contact_us") },
-      { href: "#", label: t("terms") },
-      { href: "#", label: t("privacy") },
+      { href: "/contact", label: t("contact_us") },
+      { href: "/", label: t("terms") },
+      { href: "/", label: t("privacy") },
     ],
   };
 
@@ -32,7 +32,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link
-              href={`/${locale}`}
+              href="/"
               className="flex items-center gap-2 text-lg font-bold text-primary mb-4"
             >
               <Home className="h-5 w-5" />
